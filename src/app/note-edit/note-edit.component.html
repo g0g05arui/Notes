@@ -1,7 +1,7 @@
 <div class="no-focus" style="display:flex;justify-content: center;align-items: center;width: 100%;height: 50px;">
     <input  type="text" placeholder="Titlu..." style="width:50%; height:30px;"  class="no-focus"   [(ngModel)]="title" (ngModelChange)="save($event)" >    
 </div>
-<div mat-dialog-content style="height: calc(100% - 96px);">
+<div mat-dialog-content style="height: calc(100% - 96px);" class="dialog-content">
     <textarea class="form-control" 
     name="message"
     rows="8"

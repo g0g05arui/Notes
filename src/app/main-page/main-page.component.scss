@@ -46,3 +46,17 @@
     align-items:   center;
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 450px) {
+    .search-bar-wrapper{
+        justify-content: space-around!important;
+    }
+    .add-note{
+        position: unset!important;
+    }
+}
+
+
+
