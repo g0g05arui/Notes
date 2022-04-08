@@ -1,3 +1,18 @@
 .no-focus:focus{
     outline: none;
+    outline: none;
+    border:2px solid #dcdcdc
+}
+button{
+    font-size: small;
+    left: 5px;
+    border-radius: 8px;
+    border:1px solid #dcdcdc;
+    padding:5px;
+    background-color: greenyellow;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:   center;
+    cursor: pointer;
 }

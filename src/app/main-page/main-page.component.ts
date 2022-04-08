@@ -63,6 +63,10 @@ export class MainPageComponent implements OnInit {
         this.notesService.update(index,res.data);
         this.notes=this.notesService.getNotes();
       }
+      if(res.data.delete){
+        this.notesService.delete(index);
+        this.notes=this.notesService.getNotes();
+      }
     })
   }
 }

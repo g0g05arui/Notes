@@ -36,4 +36,9 @@ export class NoteEditComponent {
   save(event):void{
 
   }
+
+  delete(){
+    this.dialogRef.close({data:{delete:true}});
+  }
+
 }

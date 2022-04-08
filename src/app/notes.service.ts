@@ -43,4 +43,10 @@ export class NotesService {
     console.log(this.notes);
     this.saveNotes();
   }
+
+  delete(index:number){
+    this.notes.splice(index, 1); // 2nd parameter means remove one item only
+    this.saveNotes();
+  }
+
 }
