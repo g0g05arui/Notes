@@ -1,0 +1,10 @@
+<div class="fullscreen-container">
+    <div class="search-bar-wrapper">
+        <div class="add-note" (click)="addEditableNote()">Adauga o notita</div>
+
+        <input id="search" type="text" placeholder="Cauta in notite..." class="search-bar" [ngModel]="searchText" (ngModelChange)="save($event)" >    
+    </div>
+    <div class="notes-container">
+        <app-notes-page (editNote)="editNote($event)" [notes]="notes"></app-notes-page>
+    </div>
+</div>

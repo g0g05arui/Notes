@@ -1,0 +1,16 @@
+<div class="notes-container">
+    <div *ngFor="let note of notes;let i = index" class="note-wrapper" (click)="updateNote(note,i)">
+        <div class="note">
+
+            
+            <div class="note-header" (click)="updateNote(note,i)">
+                <div class="note-title elipsa">{{note.title}}</div>
+                <div class="note-date">{{getNoteDate(note)}}</div>
+            </div>
+            <hr>
+            <textarea type="text" *ngIf="note.editable==true" class="note-content"></textarea>
+            <div *ngIf="note.editable==false" class="note-content"><p style="word-break: break-all;overflow-y: auto;max-height: 22vh;">{{note.content}}</p></div>
+
+        </div>
+    </div>
+</div>
